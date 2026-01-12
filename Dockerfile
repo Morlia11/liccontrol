@@ -9,7 +9,7 @@ ENV PATH="$PATH:/root/.local/bin"
 
 RUN poetry config virtualenvs.create false
 
-COPY . .
+COPY https://github.com/Morlia11/liccontrol.git
 
 RUN poetry install
 
